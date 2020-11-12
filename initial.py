@@ -6,7 +6,6 @@ def ppv(x):
         fx = float(nx)
     return fx
 
-
 def msv(k):
     mf = '{:.2f}'.format(k)
     dec = mf[-2:]
@@ -14,7 +13,6 @@ def msv(k):
     antes = str(intf).replace(',', '.')
     fn = '{}{}{}'.format(antes, ',', dec)
     return fn
-
 
 def ciclo(m):
     try:
@@ -51,39 +49,3 @@ def main(valor, tempo):
     pass
 
 # main(100, 36)
-
-# ad = ciclo('Digite o valor fixo que deseja depositar toda semana R$ ')
-# jr = 4.25
-# semanas = ciclo('Digite quantas semanas quer deixar rendendo: ')
-# dias = int(semanas)
-# total = 0
-# dep = 0
-# jr = jr / 52
-
-# for vezes in range(1, (semanas + 1)):
-#     dep += ad
-#     total += (total * jr / 100)
-#     total += ad
-
-# jcom = total - dep
-
-# ad = msv(ad)
-# jr = msv(jr)
-# total = msv(total)
-# dep = msv(dep)
-# jcom = msv(jcom)
-
-# if dias == 1:
-#     man = 'SEMANA'
-# else:
-#     man = 'SEMANAS'
-
-# print('''DEPÓSITO SEMANAL: R$ {}
-# TAXA DOS JUROS COMPOSTOS: {}%
-# TOTAL DE SEMANAS: {}
-
-# VALOR ACRESCIDO DO PRÓPRIO DINHEIRO: {}
-# VALOR ACRESCIDO EM JUROS COMPOSTOS: {}
-# VALOR FINAL APÓS {} {} RENDENDO: R$ {}'''.format(ad, jr, semanas, dep, jcom, dias, man, total))
-
-# input()
